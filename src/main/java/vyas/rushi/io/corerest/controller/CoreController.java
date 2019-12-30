@@ -16,8 +16,8 @@ public class CoreController {
     @Value("${tollstart}")
     String tollStart;
 
-    @GetMapping("/hello")
-    public String Hello(){
+    @GetMapping("/default")
+    public String TollInfo(){
         return "Your rate is: " + rate + ", number of lanes is: " + laneCount + ", toll start time is: " + tollStart;
     }
 }
